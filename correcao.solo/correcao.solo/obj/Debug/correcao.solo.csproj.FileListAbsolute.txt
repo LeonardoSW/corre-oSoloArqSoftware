@@ -8,3 +8,4 @@ C:\utfpr\Segundo Semestre\Arquietetura de Software\corre-oSoloArqSoftware\correc
 C:\utfpr\Segundo Semestre\Arquietetura de Software\corre-oSoloArqSoftware\correcao.solo\correcao.solo\obj\Debug\correcao.solo.csproj.CoreCompileInputs.cache
 C:\utfpr\Segundo Semestre\Arquietetura de Software\corre-oSoloArqSoftware\correcao.solo\correcao.solo\obj\Debug\correcao.solo.exe
 C:\utfpr\Segundo Semestre\Arquietetura de Software\corre-oSoloArqSoftware\correcao.solo\correcao.solo\obj\Debug\correcao.solo.pdb
+C:\utfpr\Segundo Semestre\Arquietetura de Software\corre-oSoloArqSoftware\correcao.solo\correcao.solo\obj\Debug\correcao.solo.Form1.resources
