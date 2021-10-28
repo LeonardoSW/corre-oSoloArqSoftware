@@ -6,7 +6,8 @@ using System.Threading.Tasks;
 
 namespace correcao.solo.Corrections_Calcs
 {
-    internal interface ICorrections
+    internal interface ICorrect
     {
+
     }
 }
