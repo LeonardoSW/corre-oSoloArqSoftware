@@ -4,10 +4,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace correcao.solo.Corrections_Calcs
+namespace correcao.solo.Data
 {
-    internal interface ICorrect
+    class Data
     {
-
     }
 }
