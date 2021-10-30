@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using correcao.solo.Frontend;
 
 namespace correcao.solo
 {
@@ -25,6 +26,12 @@ namespace correcao.solo
         private void label4_Click(object sender, EventArgs e)
         {
 
+        }
+
+        private void CarregarInformacoes_Click(object sender, EventArgs e)
+        {
+            InformacoesIniciais telaCarregaInfo = new InformacoesIniciais();
+            telaCarregaInfo.ShowDialog();
         }
     }
 }

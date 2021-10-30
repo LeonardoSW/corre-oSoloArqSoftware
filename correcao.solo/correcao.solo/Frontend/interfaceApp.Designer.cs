@@ -38,7 +38,7 @@ namespace correcao.solo
             this.button4 = new System.Windows.Forms.Button();
             this.label6 = new System.Windows.Forms.Label();
             this.button1 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
+            this.CarregarInformacoes = new System.Windows.Forms.Button();
             this.button6 = new System.Windows.Forms.Button();
             this.label7 = new System.Windows.Forms.Label();
             this.label8 = new System.Windows.Forms.Label();
@@ -146,15 +146,16 @@ namespace correcao.solo
             this.button1.Text = "Visualizar/Editar";
             this.button1.UseVisualStyleBackColor = true;
             // 
-            // button2
+            // CarregarInformacoes
             // 
-            this.button2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button2.Location = new System.Drawing.Point(114, 127);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(65, 36);
-            this.button2.TabIndex = 20;
-            this.button2.Text = "Iniciar";
-            this.button2.UseVisualStyleBackColor = true;
+            this.CarregarInformacoes.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.CarregarInformacoes.Location = new System.Drawing.Point(114, 127);
+            this.CarregarInformacoes.Name = "CarregarInformacoes";
+            this.CarregarInformacoes.Size = new System.Drawing.Size(65, 36);
+            this.CarregarInformacoes.TabIndex = 20;
+            this.CarregarInformacoes.Text = "Iniciar";
+            this.CarregarInformacoes.UseVisualStyleBackColor = true;
+            this.CarregarInformacoes.Click += new System.EventHandler(this.CarregarInformacoes_Click);
             // 
             // button6
             // 
@@ -279,7 +280,7 @@ namespace correcao.solo
             this.Controls.Add(this.label7);
             this.Controls.Add(this.button6);
             this.Controls.Add(this.button1);
-            this.Controls.Add(this.button2);
+            this.Controls.Add(this.CarregarInformacoes);
             this.Controls.Add(this.label6);
             this.Controls.Add(this.button3);
             this.Controls.Add(this.button4);
@@ -306,7 +307,7 @@ namespace correcao.solo
         private System.Windows.Forms.Button button4;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.Button CarregarInformacoes;
         private System.Windows.Forms.Button button6;
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.Label label8;

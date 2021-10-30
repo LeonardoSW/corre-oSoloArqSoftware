@@ -33,6 +33,12 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="Json.Net, Version=1.0.33.1, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\Json.Net.1.0.33\lib\netstandard2.0\Json.Net.dll</HintPath>
+    </Reference>
+    <Reference Include="Newtonsoft.Json, Version=13.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <HintPath>..\packages\Newtonsoft.Json.13.0.1\lib\net45\Newtonsoft.Json.dll</HintPath>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
     <Reference Include="System.Xml.Linq" />
@@ -46,23 +52,24 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Data\CorrectionsCalcs\defaltCalcs.cs" />
-    <Compile Include="Data\CorrectionsCalcs\fosforoCalc.cs" />
-    <Compile Include="Data\CorrectionsCalcs\magnesioCalc.cs" />
-    <Compile Include="Data\CorrectionsCalcs\potassioCalc.cs" />
-    <Compile Include="Data\Data.cs" />
-    <Compile Include="Data\IData.cs" />
+    <Compile Include="Backend\CalculosCorrecoes\CalculosPadroes.cs" />
+    <Compile Include="Backend\CalculosCorrecoes\fosforoCalc.cs" />
+    <Compile Include="Backend\CalculosCorrecoes\magnesioCalc.cs" />
+    <Compile Include="Backend\CalculosCorrecoes\potassioCalc.cs" />
+    <Compile Include="Backend\InformaçõesBase\ObjetoInfo.cs" />
+    <Compile Include="Backend\IServicosBack.cs" />
+    <Compile Include="Backend\InformaçõesBase\Info.ClienteSolo.cs" />
     <Compile Include="Frontend\BaseInfo\groudAnalytchs.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Frontend\BaseInfo\groudAnalytchs.Designer.cs">
       <DependentUpon>groudAnalytchs.cs</DependentUpon>
     </Compile>
-    <Compile Include="Frontend\BaseInfo\initialsInfo.cs">
+    <Compile Include="Frontend\BaseInfo\InformacoesIniciais.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Frontend\BaseInfo\initialsInfo.Designer.cs">
-      <DependentUpon>initialsInfo.cs</DependentUpon>
+    <Compile Include="Frontend\BaseInfo\InformacoesIniciais.Designer.cs">
+      <DependentUpon>InformacoesIniciais.cs</DependentUpon>
     </Compile>
     <Compile Include="Frontend\CorrectionsCalcs\fosforoCalc.cs">
       <SubType>Form</SubType>
@@ -88,8 +95,12 @@
     <Compile Include="Frontend\interfaceApp.Designer.cs">
       <DependentUpon>interfaceApp.cs</DependentUpon>
     </Compile>
+    <Compile Include="Frontend\IServiceFront.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Frontend\BaseInfo\InformacoesIniciais.resx">
+      <DependentUpon>InformacoesIniciais.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Frontend\interfaceApp.resx">
       <DependentUpon>interfaceApp.cs</DependentUpon>
     </EmbeddedResource>
@@ -102,6 +113,7 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
+    <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
@@ -116,8 +128,7 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="Data\BaseInfo\" />
-    <Folder Include="Data\GroundAnalytics\" />
+    <Folder Include="Backend\AnáliseDeSolo\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

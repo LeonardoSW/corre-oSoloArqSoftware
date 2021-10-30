@@ -4,15 +4,15 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace correcao.solo.Corrections_Calcs
+namespace correcao.solo.CalculosCorrecoes
 {
-    internal class Corrections
+    internal class CalculosPadrões
     {
         private double teorFosforo;
         private double fontFosforo;
         private double effFosforo;
 
-        private Corrections(double fontTeor, double fontFont, double fontEff)
+        private CalculosPadrões(double fontTeor, double fontFont, double fontEff)
         {
             this.teorFosforo = fontTeor;
             this.fontFosforo = fontFont;

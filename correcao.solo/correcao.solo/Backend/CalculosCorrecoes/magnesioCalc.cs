@@ -4,9 +4,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace correcao.solo.Data
+namespace correcao.solo.Data.CalculosCorrecoes
 {
-    class IData
+    class magnesioCalc
     {
     }
 }

@@ -4,9 +4,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace correcao.solo.Data.CorrectionsCalcs
+namespace correcao.solo.Data.CalculosCorrecoes
 {
-    class magnesioCalc
+    class fosforoCalc
     {
     }
 }
