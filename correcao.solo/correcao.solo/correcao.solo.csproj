@@ -56,9 +56,9 @@
     <Compile Include="Backend\CalculosCorrecoes\fosforoCalc.cs" />
     <Compile Include="Backend\CalculosCorrecoes\magnesioCalc.cs" />
     <Compile Include="Backend\CalculosCorrecoes\potassioCalc.cs" />
-    <Compile Include="Backend\InformaçõesBase\ObjetoInfo.cs" />
+    <Compile Include="InformaçõesBase\ObjetoInfo.cs" />
     <Compile Include="Backend\IServicosBack.cs" />
-    <Compile Include="Backend\InformaçõesBase\Info.ClienteSolo.cs" />
+    <Compile Include="InformaçõesBase\Info.ClienteSolo.cs" />
     <Compile Include="Frontend\BaseInfo\groudAnalytchs.cs">
       <SubType>Form</SubType>
     </Compile>

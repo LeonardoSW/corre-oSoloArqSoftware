@@ -44,7 +44,7 @@ namespace correcao.solo.Frontend
             this.label7 = new System.Windows.Forms.Label();
             this.label8 = new System.Windows.Forms.Label();
             this.data = new System.Windows.Forms.DateTimePicker();
-            this.produto = new System.Windows.Forms.TextBox();
+            this.produtor = new System.Windows.Forms.TextBox();
             this.municipio = new System.Windows.Forms.TextBox();
             this.lote = new System.Windows.Forms.TextBox();
             this.matriculaLote = new System.Windows.Forms.TextBox();
@@ -210,12 +210,12 @@ namespace correcao.solo.Frontend
             this.data.TabIndex = 23;
             this.data.Value = new System.DateTime(2021, 10, 30, 17, 39, 31, 0);
             // 
-            // produto
+            // produtor
             // 
-            this.produto.Location = new System.Drawing.Point(89, 91);
-            this.produto.Name = "produto";
-            this.produto.Size = new System.Drawing.Size(497, 20);
-            this.produto.TabIndex = 24;
+            this.produtor.Location = new System.Drawing.Point(89, 91);
+            this.produtor.Name = "produtor";
+            this.produtor.Size = new System.Drawing.Size(497, 20);
+            this.produtor.TabIndex = 24;
             // 
             // municipio
             // 
@@ -324,7 +324,7 @@ namespace correcao.solo.Frontend
             this.Controls.Add(this.matriculaLote);
             this.Controls.Add(this.lote);
             this.Controls.Add(this.municipio);
-            this.Controls.Add(this.produto);
+            this.Controls.Add(this.produtor);
             this.Controls.Add(this.data);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
@@ -365,7 +365,7 @@ namespace correcao.solo.Frontend
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.DateTimePicker data;
-        private System.Windows.Forms.TextBox produto;
+        private System.Windows.Forms.TextBox produtor;
         private System.Windows.Forms.TextBox municipio;
         private System.Windows.Forms.TextBox lote;
         private System.Windows.Forms.TextBox matriculaLote;

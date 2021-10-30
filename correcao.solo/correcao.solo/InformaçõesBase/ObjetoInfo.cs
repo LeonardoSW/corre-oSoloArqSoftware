@@ -13,11 +13,9 @@ namespace correcao.solo.Backend.InformaçõesBase
         public int talhao { get; set; }
         public int texturaSolo { get; set; }
         public string responsavelTecnico { get; set; }
-        public int resultadoAnaliseSolosN { get; set; }
         public DateTime data { get; set; }
         public string lote { get; set; }
         public double areaTalhao { get; set; }
-        public string argiloso { get; set; }
         public int sistemaCultivo { get; set; }
         public double profundidadeAmostraSolos { get; set; }
         public double areaTotal { get; set; }
