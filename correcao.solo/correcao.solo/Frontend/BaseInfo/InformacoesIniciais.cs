@@ -42,7 +42,9 @@ namespace correcao.solo.Frontend
             objInfo.areaTotal = int.Parse(areaTotal.Text);
             objInfo.matriculaLote = matriculaLote.Text;
 
-       //     front.gravaInfoIniciais(){ };
+            front.gravaInfoIniciais(objInfo);
+
+            this.Close();
         }
     }
 }

@@ -17,7 +17,7 @@ namespace correcao.solo.Frontend
             
             //paramos aqui, trocamos o modo de passagem por parametro, passando direto um objeto ao inves de todas as informações brutas.
             // parte de obtenção de dados iniciais finalizada, agora falta a gravação para posterior carregamento.
-//            back.carregaInformacoes();
+            back.carregaInformacoes(obj);
         }
         
     }

@@ -13,11 +13,12 @@ namespace correcao.solo.IServicosBack
 
         public IServicosBack() { }
 
-        public void carregaInformacoes(string prod, string muni, int talhao, int textSol, string respTec, string lote, double areaTal, int sistCult, double profAmostSol, double areaTT, string matrcLote)
+        public void carregaInformacoes(ObjetoInfo obj)
         {
+
             try
             {
-                new Info(prod, muni, talhao, textSol, respTec, lote, areaTal, sistCult, profAmostSol, areaTT, matrcLote);
+            new Info(obj);
             }
             catch(Exception e)
             {

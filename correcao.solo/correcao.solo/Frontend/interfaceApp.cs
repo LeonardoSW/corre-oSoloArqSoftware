@@ -18,6 +18,8 @@ namespace correcao.solo
             InitializeComponent();
         }
 
+        InformacoesIniciais telaCarregaInfo = new InformacoesIniciais();
+
         private void label1_Click(object sender, EventArgs e)
         {
 
@@ -30,7 +32,6 @@ namespace correcao.solo
 
         private void CarregarInformacoes_Click(object sender, EventArgs e)
         {
-            InformacoesIniciais telaCarregaInfo = new InformacoesIniciais();
             telaCarregaInfo.ShowDialog();
         }
     }

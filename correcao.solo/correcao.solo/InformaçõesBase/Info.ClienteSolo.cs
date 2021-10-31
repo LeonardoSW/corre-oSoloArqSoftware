@@ -14,35 +14,19 @@ namespace correcao.solo.Backend.InformaçõesBase
     {
         
 
-        public Info(string prod, string muni, int talhao, int textSol, string respTec, string lote, double areaTal, int sistCult, double profAmostSol, double areaTT, string matrcLote )
+        public Info(ObjetoInfo obj )
         {
-            ObjetoInfo obj = new ObjetoInfo();
-
-            obj.produtor = prod;
-            obj.municipio = muni;
-            obj.talhao = talhao;
-            obj.texturaSolo = textSol;
-            obj.responsavelTecnico = respTec;
-            obj.lote = lote;
-            obj.areaTalhao = areaTal;
-            obj.sistemaCultivo = sistCult;
-            obj.profundidadeAmostraSolos = profAmostSol;
-            obj.areaTotal = areaTT;
-            obj.matriculaLote = matrcLote;
-
-            saveData(obj);
-
+           saveData(obj);
         }
 
         private void saveData(ObjetoInfo objetoDeInformacoes)
         {
             string JsonSave = JsonConvert.SerializeObject(objetoDeInformacoes);
-
+            string nomeArq = "infoIniciais" + DateTime.Now.ToString("HH-mm-ss-ff") + ".txt";
             try
             {
-                StreamWriter file = File.CreateText("..Backend/informacoesTrabalho.txt");
-                JsonSerializer serializer = new JsonSerializer();
-                serializer.Serialize(file, objetoDeInformacoes);
+                StreamWriter file = new StreamWriter(nomeArq);
+                // gravar aqui o Json com os dados informados
             }
             catch (Exception e)
             {
