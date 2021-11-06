@@ -23,4 +23,4 @@ C:\utfpr\Segundo Semestre\Arquietetura de Software\2\corre-oSoloArqSoftware\corr
 C:\utfpr\Segundo Semestre\Arquietetura de Software\2\corre-oSoloArqSoftware\correcao.solo\correcao.solo\obj\Debug\correcao.solo.csproj.CopyComplete
 C:\utfpr\Segundo Semestre\Arquietetura de Software\2\corre-oSoloArqSoftware\correcao.solo\correcao.solo\bin\Debug\Newtonsoft.Json.dll
 C:\utfpr\Segundo Semestre\Arquietetura de Software\2\corre-oSoloArqSoftware\correcao.solo\correcao.solo\bin\Debug\Newtonsoft.Json.xml
-C:\utfpr\Segundo Semestre\Arquietetura de Software\2\corre-oSoloArqSoftware\correcao.solo\correcao.solo\obj\Debug\correcao.solo.Frontend.InformacoesIniciais.resources
+C:\utfpr\Segundo Semestre\Arquietetura de Software\2\corre-oSoloArqSoftware\correcao.solo\correcao.solo\obj\Debug\correcao.solo.Frontend.InformacoesClienteSolo.resources

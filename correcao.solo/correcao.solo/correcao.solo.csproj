@@ -52,54 +52,24 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Backend\CalculosCorrecoes\CalculosPadroes.cs" />
-    <Compile Include="Backend\CalculosCorrecoes\fosforoCalc.cs" />
-    <Compile Include="Backend\CalculosCorrecoes\magnesioCalc.cs" />
-    <Compile Include="Backend\CalculosCorrecoes\potassioCalc.cs" />
+    <Compile Include="Frontend\InformacoesClienteSolo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Frontend\InformacoesClienteSolo.Designer.cs">
+      <DependentUpon>InformacoesClienteSolo.cs</DependentUpon>
+    </Compile>
     <Compile Include="InformaçõesBase\ObjetoInfo.cs" />
-    <Compile Include="Backend\IServicosBack.cs" />
     <Compile Include="InformaçõesBase\Info.ClienteSolo.cs" />
-    <Compile Include="Frontend\BaseInfo\groudAnalytchs.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Frontend\BaseInfo\groudAnalytchs.Designer.cs">
-      <DependentUpon>groudAnalytchs.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Frontend\BaseInfo\InformacoesIniciais.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Frontend\BaseInfo\InformacoesIniciais.Designer.cs">
-      <DependentUpon>InformacoesIniciais.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Frontend\CorrectionsCalcs\fosforoCalc.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Frontend\CorrectionsCalcs\fosforoCalc.Designer.cs">
-      <DependentUpon>fosforoCalc.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Frontend\CorrectionsCalcs\magnesioCalc.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Frontend\CorrectionsCalcs\magnesioCalc.Designer.cs">
-      <DependentUpon>magnesioCalc.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Frontend\CorrectionsCalcs\potassioCalcs.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Frontend\CorrectionsCalcs\potassioCalcs.Designer.cs">
-      <DependentUpon>potassioCalcs.cs</DependentUpon>
-    </Compile>
     <Compile Include="Frontend\interfaceApp.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Frontend\interfaceApp.Designer.cs">
       <DependentUpon>interfaceApp.cs</DependentUpon>
     </Compile>
-    <Compile Include="Frontend\IServiceFront.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <EmbeddedResource Include="Frontend\BaseInfo\InformacoesIniciais.resx">
-      <DependentUpon>InformacoesIniciais.cs</DependentUpon>
+    <EmbeddedResource Include="Frontend\InformacoesClienteSolo.resx">
+      <DependentUpon>InformacoesClienteSolo.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Frontend\interfaceApp.resx">
       <DependentUpon>interfaceApp.cs</DependentUpon>
@@ -127,8 +97,6 @@
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="Backend\AnáliseDeSolo\" />
-  </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
