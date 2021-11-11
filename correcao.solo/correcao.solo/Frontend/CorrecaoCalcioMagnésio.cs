@@ -15,6 +15,7 @@ namespace correcao.solo.Frontend
         public string calcio { get; set; }
         public string ctc { get; set; }
         public string texturaSolo { get; set; }
+        public string qtdAplicar_ { get; set; }
 
         public CorrecaoCalcioMagnésio(string calcio, string ctc, string textSolo)
         {
@@ -30,6 +31,9 @@ namespace correcao.solo.Frontend
             textSolo.Text = calcio;
             textBox1.Text = ctc;
             textBox2.Text = texturaSolo;
+            qtdAplicar.Text = "3"; // serão todos manipulaveis automaticamente por dados previamente obtidos.
+            textBox18.Text = qtdAplicar.ToString();
+            GetQtdAplicar();
         }
 
         public void GetParticipacaoAtualCTCCalcio()
@@ -37,9 +41,19 @@ namespace correcao.solo.Frontend
 
         }
 
+        public void GetQtdAplicar()
+        {
+            qtdAplicar_ = "3";
+        }
+
         private void Salvar_Click(object sender, EventArgs e)
         {
             this.Close();
+        }
+
+        private void qtdAplicar_TextChanged(object sender, EventArgs e)
+        {
+            
         }
     }
 }

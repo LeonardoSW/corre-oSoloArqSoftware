@@ -85,7 +85,7 @@ namespace correcao.solo.Frontend
             this.label40 = new System.Windows.Forms.Label();
             this.textBox13 = new System.Windows.Forms.TextBox();
             this.label41 = new System.Windows.Forms.Label();
-            this.textBox14 = new System.Windows.Forms.TextBox();
+            this.aposCorrecao = new System.Windows.Forms.TextBox();
             this.label42 = new System.Windows.Forms.Label();
             this.textBox15 = new System.Windows.Forms.TextBox();
             this.label43 = new System.Windows.Forms.Label();
@@ -95,7 +95,7 @@ namespace correcao.solo.Frontend
             this.textBox16 = new System.Windows.Forms.TextBox();
             this.textBox17 = new System.Windows.Forms.TextBox();
             this.textBox18 = new System.Windows.Forms.TextBox();
-            this.textBox19 = new System.Windows.Forms.TextBox();
+            this.qtdAplicar = new System.Windows.Forms.TextBox();
             this.Salvar = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.EfFosforo)).BeginInit();
             this.SuspendLayout();
@@ -625,12 +625,12 @@ namespace correcao.solo.Frontend
             this.label41.TabIndex = 116;
             this.label41.Text = "Após as \r\ncorreções:\t";
             // 
-            // textBox14
+            // aposCorrecao
             // 
-            this.textBox14.Location = new System.Drawing.Point(135, 366);
-            this.textBox14.Name = "textBox14";
-            this.textBox14.Size = new System.Drawing.Size(129, 20);
-            this.textBox14.TabIndex = 117;
+            this.aposCorrecao.Location = new System.Drawing.Point(135, 366);
+            this.aposCorrecao.Name = "aposCorrecao";
+            this.aposCorrecao.Size = new System.Drawing.Size(129, 20);
+            this.aposCorrecao.TabIndex = 117;
             // 
             // label42
             // 
@@ -710,12 +710,13 @@ namespace correcao.solo.Frontend
             this.textBox18.Size = new System.Drawing.Size(90, 20);
             this.textBox18.TabIndex = 124;
             // 
-            // textBox19
+            // qtdAplicar
             // 
-            this.textBox19.Location = new System.Drawing.Point(183, 299);
-            this.textBox19.Name = "textBox19";
-            this.textBox19.Size = new System.Drawing.Size(90, 20);
-            this.textBox19.TabIndex = 127;
+            this.qtdAplicar.Location = new System.Drawing.Point(183, 299);
+            this.qtdAplicar.Name = "qtdAplicar";
+            this.qtdAplicar.Size = new System.Drawing.Size(90, 20);
+            this.qtdAplicar.TabIndex = 127;
+            this.qtdAplicar.TextChanged += new System.EventHandler(this.qtdAplicar_TextChanged);
             // 
             // Salvar
             // 
@@ -734,7 +735,7 @@ namespace correcao.solo.Frontend
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
             this.Controls.Add(this.Salvar);
-            this.Controls.Add(this.textBox19);
+            this.Controls.Add(this.qtdAplicar);
             this.Controls.Add(this.textBox16);
             this.Controls.Add(this.textBox17);
             this.Controls.Add(this.textBox18);
@@ -744,7 +745,7 @@ namespace correcao.solo.Frontend
             this.Controls.Add(this.label46);
             this.Controls.Add(this.textBox15);
             this.Controls.Add(this.label42);
-            this.Controls.Add(this.textBox14);
+            this.Controls.Add(this.aposCorrecao);
             this.Controls.Add(this.label41);
             this.Controls.Add(this.textBox13);
             this.Controls.Add(this.label40);
@@ -868,7 +869,7 @@ namespace correcao.solo.Frontend
         private System.Windows.Forms.Label label40;
         private System.Windows.Forms.TextBox textBox13;
         private System.Windows.Forms.Label label41;
-        private System.Windows.Forms.TextBox textBox14;
+        private System.Windows.Forms.TextBox aposCorrecao;
         private System.Windows.Forms.Label label42;
         private System.Windows.Forms.TextBox textBox15;
         private System.Windows.Forms.Label label43;
@@ -878,7 +879,7 @@ namespace correcao.solo.Frontend
         private System.Windows.Forms.TextBox textBox16;
         private System.Windows.Forms.TextBox textBox17;
         private System.Windows.Forms.TextBox textBox18;
-        private System.Windows.Forms.TextBox textBox19;
+        private System.Windows.Forms.TextBox qtdAplicar;
         private System.Windows.Forms.Button Salvar;
     }
 }

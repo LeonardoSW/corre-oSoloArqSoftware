@@ -138,7 +138,7 @@ namespace correcao.solo
         private void AplicarValoresCalcioMagnésio_Click(object sender, EventArgs e)
         {
             telaCorrecaoCalcioMagnesio.ShowDialog();
-            //telaCorrecaoCalcioMagnesio.qtdAplicar.ToString();
+            textBox18.Text = telaCorrecaoCalcioMagnesio.qtdAplicar_.ToString();
         }
     }
 }
