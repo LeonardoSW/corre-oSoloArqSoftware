@@ -52,6 +52,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Frontend\CorrecaoFosforo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Frontend\CorrecaoFosforo.Designer.cs">
+      <DependentUpon>CorrecaoFosforo.cs</DependentUpon>
+    </Compile>
     <Compile Include="Frontend\InformacoesClienteSolo.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -68,6 +74,9 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Frontend\CorrecaoFosforo.resx">
+      <DependentUpon>CorrecaoFosforo.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Frontend\InformacoesClienteSolo.resx">
       <DependentUpon>InformacoesClienteSolo.cs</DependentUpon>
     </EmbeddedResource>

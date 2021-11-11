@@ -101,7 +101,7 @@ namespace correcao.solo
             this.label45 = new System.Windows.Forms.Label();
             this.label46 = new System.Windows.Forms.Label();
             this.label47 = new System.Windows.Forms.Label();
-            this.button1 = new System.Windows.Forms.Button();
+            this.AbrirTelaCorrecaoFosforo = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
             this.button3 = new System.Windows.Forms.Button();
             this.SuspendLayout();
@@ -762,15 +762,16 @@ namespace correcao.solo
             this.label47.TabIndex = 95;
             this.label47.Text = "V% atual:";
             // 
-            // button1
+            // AbrirTelaCorrecaoFosforo
             // 
-            this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.Location = new System.Drawing.Point(15, 348);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(177, 66);
-            this.button1.TabIndex = 96;
-            this.button1.Text = "Aplicar Valores \r\nCorreção/Recuperação de Fosforo";
-            this.button1.UseVisualStyleBackColor = true;
+            this.AbrirTelaCorrecaoFosforo.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.AbrirTelaCorrecaoFosforo.Location = new System.Drawing.Point(15, 348);
+            this.AbrirTelaCorrecaoFosforo.Name = "AbrirTelaCorrecaoFosforo";
+            this.AbrirTelaCorrecaoFosforo.Size = new System.Drawing.Size(177, 66);
+            this.AbrirTelaCorrecaoFosforo.TabIndex = 96;
+            this.AbrirTelaCorrecaoFosforo.Text = "Aplicar Valores \r\nCorreção/Recuperação de Fosforo";
+            this.AbrirTelaCorrecaoFosforo.UseVisualStyleBackColor = true;
+            this.AbrirTelaCorrecaoFosforo.Click += new System.EventHandler(this.AbrirTelaCorrecaoFosforo_Click);
             // 
             // button2
             // 
@@ -799,7 +800,7 @@ namespace correcao.solo
             this.ClientSize = new System.Drawing.Size(737, 487);
             this.Controls.Add(this.button3);
             this.Controls.Add(this.button2);
-            this.Controls.Add(this.button1);
+            this.Controls.Add(this.AbrirTelaCorrecaoFosforo);
             this.Controls.Add(this.label47);
             this.Controls.Add(this.label46);
             this.Controls.Add(this.label45);
@@ -954,7 +955,7 @@ namespace correcao.solo
         private System.Windows.Forms.Label label45;
         private System.Windows.Forms.Label label46;
         private System.Windows.Forms.Label label47;
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button AbrirTelaCorrecaoFosforo;
         private System.Windows.Forms.Button button2;
         private System.Windows.Forms.Button button3;
     }

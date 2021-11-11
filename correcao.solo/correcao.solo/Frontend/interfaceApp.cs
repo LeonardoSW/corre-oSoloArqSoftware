@@ -21,6 +21,7 @@ namespace correcao.solo
 
         
         InformacoesClienteSolo telaClienteSolo = new InformacoesClienteSolo();
+        CorrecaoFosforo telaCorrecaoFosforo = new CorrecaoFosforo();
         double valorCmol = 0;
 
         private void label1_Click(object sender, EventArgs e)
@@ -51,21 +52,6 @@ namespace correcao.solo
         private void cMolPotassio_TextChanged(object sender, EventArgs e)
         {
 
-        }
-
-        private void GetValorCmol( )
-        {
-            if(string.IsNullOrEmpty(magnesioNoSolo.Text) &&
-               string.IsNullOrEmpty(potassioNoSolo.Text) &&
-               string.IsNullOrEmpty(calcioNoSolo.Text))
-               { 
-                    magnesioNoSolo.Text = "0";
-                    potassioNoSolo.Text = "0";
-                    calcioNoSolo.Text = "0";
-                }
-
-            valorCmol = double.Parse(potassioNoSolo.Text) + double.Parse(magnesioNoSolo.Text) + double.Parse(calcioNoSolo.Text);
-            sCmol.Text = valorCmol.ToString();
         }
 
         private void potassioNoSolo_TextChanged(object sender, EventArgs e)
@@ -102,6 +88,21 @@ namespace correcao.solo
             GetVPercentualAtual();
         }
 
+        private void GetValorCmol()
+        {
+            if (string.IsNullOrEmpty(magnesioNoSolo.Text) &&
+               string.IsNullOrEmpty(potassioNoSolo.Text) &&
+               string.IsNullOrEmpty(calcioNoSolo.Text))
+            {
+                magnesioNoSolo.Text = "0";
+                potassioNoSolo.Text = "0";
+                calcioNoSolo.Text = "0";
+            }
+
+            valorCmol = double.Parse(potassioNoSolo.Text) + double.Parse(magnesioNoSolo.Text) + double.Parse(calcioNoSolo.Text);
+            sCmol.Text = valorCmol.ToString();
+        }
+
         private void GetCtcCmol()
         {
             GetValorCmol();
@@ -118,6 +119,12 @@ namespace correcao.solo
         private void textBox22_TextChanged(object sender, EventArgs e)
         {
             
+        }
+
+        private void AbrirTelaCorrecaoFosforo_Click(object sender, EventArgs e)
+        {
+            telaCorrecaoFosforo.ShowDialog();
+
         }
     }
 }
