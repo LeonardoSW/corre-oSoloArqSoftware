@@ -58,6 +58,12 @@
     <Compile Include="Frontend\CorrecaoFosforo.Designer.cs">
       <DependentUpon>CorrecaoFosforo.cs</DependentUpon>
     </Compile>
+    <Compile Include="Frontend\CorrecaoPotassio.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Frontend\CorrecaoPotassio.Designer.cs">
+      <DependentUpon>CorrecaoPotassio.cs</DependentUpon>
+    </Compile>
     <Compile Include="Frontend\InformacoesClienteSolo.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -76,6 +82,9 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="Frontend\CorrecaoFosforo.resx">
       <DependentUpon>CorrecaoFosforo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Frontend\CorrecaoPotassio.resx">
+      <DependentUpon>CorrecaoPotassio.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Frontend\InformacoesClienteSolo.resx">
       <DependentUpon>InformacoesClienteSolo.cs</DependentUpon>

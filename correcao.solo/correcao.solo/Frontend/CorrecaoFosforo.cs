@@ -14,7 +14,7 @@ namespace correcao.solo.Frontend
     {
 
         Random rand = new Random();
-        public double qtdAplicar { get; set; }
+        public decimal qtdAplicar { get; set; }
 
         public CorrecaoFosforo()
         {
@@ -32,12 +32,13 @@ namespace correcao.solo.Frontend
         private void GetQuantidadeAplicar()
         {
             var calculo = 4 * 50 * 100 / EfFosforo.Value*2;
+            qtdAplicar = calculo;
             qtdAplicarTextBox.Text = calculo.ToString();
         }
 
         private void GetCusto()
         {
-            Custo.Text = rand.Next().ToString();
+            Custo.Text = rand.Next().ToString("C2");
         }
 
         private void FonteFosforoName_TextChanged(object sender, EventArgs e)
@@ -118,6 +119,16 @@ namespace correcao.solo.Frontend
         private void textBox13_TextChanged(object sender, EventArgs e)
         {
             GetCusto();
+        }
+
+        private void Custo_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void Salvar_Click(object sender, EventArgs e)
+        {
+            this.Close();
         }
     }
 }

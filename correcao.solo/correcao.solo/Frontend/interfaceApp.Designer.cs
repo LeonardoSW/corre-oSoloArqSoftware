@@ -60,7 +60,6 @@ namespace correcao.solo
             this.textBox15 = new System.Windows.Forms.TextBox();
             this.textBox16 = new System.Windows.Forms.TextBox();
             this.textBox18 = new System.Windows.Forms.TextBox();
-            this.textBox19 = new System.Windows.Forms.TextBox();
             this.textBox20 = new System.Windows.Forms.TextBox();
             this.textBox21 = new System.Windows.Forms.TextBox();
             this.vPercentualAtual = new System.Windows.Forms.TextBox();
@@ -102,7 +101,7 @@ namespace correcao.solo
             this.label46 = new System.Windows.Forms.Label();
             this.label47 = new System.Windows.Forms.Label();
             this.AbrirTelaCorrecaoFosforo = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
+            this.AplicarValoresCorrecaoPotassio = new System.Windows.Forms.Button();
             this.button3 = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
@@ -377,13 +376,6 @@ namespace correcao.solo
             this.textBox18.Name = "textBox18";
             this.textBox18.Size = new System.Drawing.Size(84, 20);
             this.textBox18.TabIndex = 52;
-            // 
-            // textBox19
-            // 
-            this.textBox19.Location = new System.Drawing.Point(298, 252);
-            this.textBox19.Name = "textBox19";
-            this.textBox19.Size = new System.Drawing.Size(94, 20);
-            this.textBox19.TabIndex = 51;
             // 
             // textBox20
             // 
@@ -773,15 +765,16 @@ namespace correcao.solo
             this.AbrirTelaCorrecaoFosforo.UseVisualStyleBackColor = true;
             this.AbrirTelaCorrecaoFosforo.Click += new System.EventHandler(this.AbrirTelaCorrecaoFosforo_Click);
             // 
-            // button2
+            // AplicarValoresCorrecaoPotassio
             // 
-            this.button2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button2.Location = new System.Drawing.Point(268, 348);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(177, 66);
-            this.button2.TabIndex = 97;
-            this.button2.Text = "Aplicar Valores \r\nCorreção/Recuperação de Potássio";
-            this.button2.UseVisualStyleBackColor = true;
+            this.AplicarValoresCorrecaoPotassio.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.AplicarValoresCorrecaoPotassio.Location = new System.Drawing.Point(268, 348);
+            this.AplicarValoresCorrecaoPotassio.Name = "AplicarValoresCorrecaoPotassio";
+            this.AplicarValoresCorrecaoPotassio.Size = new System.Drawing.Size(177, 66);
+            this.AplicarValoresCorrecaoPotassio.TabIndex = 97;
+            this.AplicarValoresCorrecaoPotassio.Text = "Aplicar Valores \r\nCorreção/Recuperação de Potássio";
+            this.AplicarValoresCorrecaoPotassio.UseVisualStyleBackColor = true;
+            this.AplicarValoresCorrecaoPotassio.Click += new System.EventHandler(this.AplicarValoresCorrecaoPotassio_Click);
             // 
             // button3
             // 
@@ -799,7 +792,7 @@ namespace correcao.solo
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(737, 487);
             this.Controls.Add(this.button3);
-            this.Controls.Add(this.button2);
+            this.Controls.Add(this.AplicarValoresCorrecaoPotassio);
             this.Controls.Add(this.AbrirTelaCorrecaoFosforo);
             this.Controls.Add(this.label47);
             this.Controls.Add(this.label46);
@@ -842,7 +835,6 @@ namespace correcao.solo
             this.Controls.Add(this.textBox15);
             this.Controls.Add(this.textBox16);
             this.Controls.Add(this.textBox18);
-            this.Controls.Add(this.textBox19);
             this.Controls.Add(this.textBox20);
             this.Controls.Add(this.textBox21);
             this.Controls.Add(this.HmaisAL);
@@ -914,7 +906,6 @@ namespace correcao.solo
         private System.Windows.Forms.TextBox textBox15;
         private System.Windows.Forms.TextBox textBox16;
         private System.Windows.Forms.TextBox textBox18;
-        private System.Windows.Forms.TextBox textBox19;
         private System.Windows.Forms.TextBox textBox20;
         private System.Windows.Forms.TextBox textBox21;
         private System.Windows.Forms.TextBox vPercentualAtual;
@@ -956,7 +947,7 @@ namespace correcao.solo
         private System.Windows.Forms.Label label46;
         private System.Windows.Forms.Label label47;
         private System.Windows.Forms.Button AbrirTelaCorrecaoFosforo;
-        private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.Button AplicarValoresCorrecaoPotassio;
         private System.Windows.Forms.Button button3;
     }
 }

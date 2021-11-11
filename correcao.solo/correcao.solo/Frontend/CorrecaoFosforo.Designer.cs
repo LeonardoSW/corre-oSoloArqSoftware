@@ -71,6 +71,7 @@ namespace correcao.solo.Frontend
             this.label25 = new System.Windows.Forms.Label();
             this.label26 = new System.Windows.Forms.Label();
             this.EfFosforo = new System.Windows.Forms.NumericUpDown();
+            this.Salvar = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.EfFosforo)).BeginInit();
             this.SuspendLayout();
             // 
@@ -78,7 +79,7 @@ namespace correcao.solo.Frontend
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.25F);
-            this.label1.Location = new System.Drawing.Point(32, 52);
+            this.label1.Location = new System.Drawing.Point(32, 41);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(158, 16);
             this.label1.TabIndex = 0;
@@ -88,7 +89,7 @@ namespace correcao.solo.Frontend
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.25F);
-            this.label2.Location = new System.Drawing.Point(32, 82);
+            this.label2.Location = new System.Drawing.Point(32, 71);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(164, 16);
             this.label2.TabIndex = 1;
@@ -98,7 +99,7 @@ namespace correcao.solo.Frontend
             // 
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.25F);
-            this.label3.Location = new System.Drawing.Point(32, 113);
+            this.label3.Location = new System.Drawing.Point(32, 102);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(136, 16);
             this.label3.TabIndex = 2;
@@ -108,7 +109,7 @@ namespace correcao.solo.Frontend
             // 
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.25F);
-            this.label4.Location = new System.Drawing.Point(32, 142);
+            this.label4.Location = new System.Drawing.Point(32, 131);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(152, 16);
             this.label4.TabIndex = 3;
@@ -126,14 +127,14 @@ namespace correcao.solo.Frontend
             // 
             // textBox1
             // 
-            this.textBox1.Location = new System.Drawing.Point(202, 51);
+            this.textBox1.Location = new System.Drawing.Point(202, 40);
             this.textBox1.Name = "textBox1";
             this.textBox1.Size = new System.Drawing.Size(163, 20);
             this.textBox1.TabIndex = 5;
             // 
             // FonteFosforoNumero
             // 
-            this.FonteFosforoNumero.Location = new System.Drawing.Point(202, 81);
+            this.FonteFosforoNumero.Location = new System.Drawing.Point(202, 70);
             this.FonteFosforoNumero.Name = "FonteFosforoNumero";
             this.FonteFosforoNumero.Size = new System.Drawing.Size(163, 20);
             this.FonteFosforoNumero.TabIndex = 6;
@@ -141,14 +142,14 @@ namespace correcao.solo.Frontend
             // 
             // qtdAplicarTextBox
             // 
-            this.qtdAplicarTextBox.Location = new System.Drawing.Point(202, 112);
+            this.qtdAplicarTextBox.Location = new System.Drawing.Point(202, 101);
             this.qtdAplicarTextBox.Name = "qtdAplicarTextBox";
             this.qtdAplicarTextBox.Size = new System.Drawing.Size(163, 20);
             this.qtdAplicarTextBox.TabIndex = 7;
             // 
             // FonteFosforoName
             // 
-            this.FonteFosforoName.Location = new System.Drawing.Point(371, 82);
+            this.FonteFosforoName.Location = new System.Drawing.Point(371, 71);
             this.FonteFosforoName.Name = "FonteFosforoName";
             this.FonteFosforoName.Size = new System.Drawing.Size(149, 20);
             this.FonteFosforoName.TabIndex = 9;
@@ -158,7 +159,7 @@ namespace correcao.solo.Frontend
             // 
             this.label8.AutoSize = true;
             this.label8.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.25F);
-            this.label8.Location = new System.Drawing.Point(555, 154);
+            this.label8.Location = new System.Drawing.Point(553, 131);
             this.label8.Name = "label8";
             this.label8.Size = new System.Drawing.Size(84, 16);
             this.label8.TabIndex = 12;
@@ -166,16 +167,17 @@ namespace correcao.solo.Frontend
             // 
             // Custo
             // 
-            this.Custo.Location = new System.Drawing.Point(645, 153);
+            this.Custo.Location = new System.Drawing.Point(643, 130);
             this.Custo.Name = "Custo";
             this.Custo.Size = new System.Drawing.Size(90, 20);
             this.Custo.TabIndex = 13;
+            this.Custo.TextChanged += new System.EventHandler(this.Custo_TextChanged);
             // 
             // label9
             // 
             this.label9.AutoSize = true;
             this.label9.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F);
-            this.label9.Location = new System.Drawing.Point(326, 198);
+            this.label9.Location = new System.Drawing.Point(326, 176);
             this.label9.Name = "label9";
             this.label9.Size = new System.Drawing.Size(131, 18);
             this.label9.TabIndex = 14;
@@ -185,125 +187,125 @@ namespace correcao.solo.Frontend
             // 
             this.label10.AutoSize = true;
             this.label10.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.25F);
-            this.label10.Location = new System.Drawing.Point(32, 358);
+            this.label10.Location = new System.Drawing.Point(33, 325);
             this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(152, 16);
+            this.label10.Size = new System.Drawing.Size(113, 16);
             this.label10.TabIndex = 18;
-            this.label10.Text = "Eficiência do Fósforo %:";
+            this.label10.Text = "7 – Fosfato  Gafsa\t";
             // 
             // label11
             // 
             this.label11.AutoSize = true;
             this.label11.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.25F);
-            this.label11.Location = new System.Drawing.Point(32, 329);
+            this.label11.Location = new System.Drawing.Point(33, 296);
             this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(136, 16);
+            this.label11.Size = new System.Drawing.Size(65, 16);
             this.label11.TabIndex = 17;
-            this.label11.Text = "Quantidade a aplicar:";
+            this.label11.Text = "5 – Yoorin\t";
             // 
             // label12
             // 
             this.label12.AutoSize = true;
             this.label12.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.25F);
-            this.label12.Location = new System.Drawing.Point(32, 298);
+            this.label12.Location = new System.Drawing.Point(33, 265);
             this.label12.Name = "label12";
-            this.label12.Size = new System.Drawing.Size(164, 16);
+            this.label12.Size = new System.Drawing.Size(55, 16);
             this.label12.TabIndex = 16;
-            this.label12.Text = "Fonte de Fósforo a utilizar:";
+            this.label12.Text = "3 – MAP\t";
             // 
             // label13
             // 
             this.label13.AutoSize = true;
             this.label13.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.25F);
-            this.label13.Location = new System.Drawing.Point(32, 268);
+            this.label13.Location = new System.Drawing.Point(33, 235);
             this.label13.Name = "label13";
-            this.label13.Size = new System.Drawing.Size(158, 16);
+            this.label13.Size = new System.Drawing.Size(154, 16);
             this.label13.TabIndex = 15;
-            this.label13.Text = "Teor de Fósforo a atingir:";
+            this.label13.Text = "1 – Superfosfato Simples\t";
             // 
             // label16
             // 
             this.label16.AutoSize = true;
             this.label16.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.25F);
-            this.label16.Location = new System.Drawing.Point(32, 415);
+            this.label16.Location = new System.Drawing.Point(33, 382);
             this.label16.Name = "label16";
-            this.label16.Size = new System.Drawing.Size(164, 16);
+            this.label16.Size = new System.Drawing.Size(130, 16);
             this.label16.TabIndex = 20;
-            this.label16.Text = "Fonte de Fósforo a utilizar:";
+            this.label16.Text = "11 – Ácido Fosfórico \t";
             // 
             // label17
             // 
             this.label17.AutoSize = true;
             this.label17.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.25F);
-            this.label17.Location = new System.Drawing.Point(32, 385);
+            this.label17.Location = new System.Drawing.Point(33, 352);
             this.label17.Name = "label17";
-            this.label17.Size = new System.Drawing.Size(158, 16);
+            this.label17.Size = new System.Drawing.Size(134, 16);
             this.label17.TabIndex = 19;
-            this.label17.Text = "Teor de Fósforo a atingir:";
+            this.label17.Text = "9 - Fosf.  Patos Minas\t";
             // 
             // label14
             // 
             this.label14.AutoSize = true;
             this.label14.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.25F);
-            this.label14.Location = new System.Drawing.Point(419, 415);
+            this.label14.Location = new System.Drawing.Point(420, 382);
             this.label14.Name = "label14";
-            this.label14.Size = new System.Drawing.Size(164, 16);
+            this.label14.Size = new System.Drawing.Size(141, 16);
             this.label14.TabIndex = 26;
-            this.label14.Text = "Fonte de Fósforo a utilizar:";
+            this.label14.Text = "12 – Multif.Magnesiano\t";
             // 
             // label15
             // 
             this.label15.AutoSize = true;
             this.label15.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.25F);
-            this.label15.Location = new System.Drawing.Point(419, 385);
+            this.label15.Location = new System.Drawing.Point(420, 352);
             this.label15.Name = "label15";
-            this.label15.Size = new System.Drawing.Size(158, 16);
+            this.label15.Size = new System.Drawing.Size(151, 16);
             this.label15.TabIndex = 25;
-            this.label15.Text = "Teor de Fósforo a atingir:";
+            this.label15.Text = "10 – Escória de Thomas\t";
             // 
             // label18
             // 
             this.label18.AutoSize = true;
             this.label18.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.25F);
-            this.label18.Location = new System.Drawing.Point(419, 358);
+            this.label18.Location = new System.Drawing.Point(420, 325);
             this.label18.Name = "label18";
-            this.label18.Size = new System.Drawing.Size(152, 16);
+            this.label18.Size = new System.Drawing.Size(113, 16);
             this.label18.TabIndex = 24;
-            this.label18.Text = "Eficiência do Fósforo %:";
+            this.label18.Text = "8 – Fosfato  Daoui\t";
             // 
             // label19
             // 
             this.label19.AutoSize = true;
             this.label19.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.25F);
-            this.label19.Location = new System.Drawing.Point(419, 329);
+            this.label19.Location = new System.Drawing.Point(420, 296);
             this.label19.Name = "label19";
-            this.label19.Size = new System.Drawing.Size(136, 16);
+            this.label19.Size = new System.Drawing.Size(106, 16);
             this.label19.TabIndex = 23;
-            this.label19.Text = "Quantidade a aplicar:";
+            this.label19.Text = "6 – Fosfato  Arad\t";
             // 
             // label20
             // 
             this.label20.AutoSize = true;
             this.label20.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.25F);
-            this.label20.Location = new System.Drawing.Point(419, 298);
+            this.label20.Location = new System.Drawing.Point(420, 265);
             this.label20.Name = "label20";
-            this.label20.Size = new System.Drawing.Size(164, 16);
+            this.label20.Size = new System.Drawing.Size(54, 16);
             this.label20.TabIndex = 22;
-            this.label20.Text = "Fonte de Fósforo a utilizar:";
+            this.label20.Text = "4 – DAP\t";
             // 
             // label21
             // 
             this.label21.AutoSize = true;
             this.label21.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.25F);
-            this.label21.Location = new System.Drawing.Point(419, 268);
+            this.label21.Location = new System.Drawing.Point(420, 235);
             this.label21.Name = "label21";
-            this.label21.Size = new System.Drawing.Size(158, 16);
+            this.label21.Size = new System.Drawing.Size(140, 16);
             this.label21.TabIndex = 21;
-            this.label21.Text = "Teor de Fósforo a atingir:";
+            this.label21.Text = "2 – Superfosfato Triplo\t";
             // 
             // textBox7
             // 
-            this.textBox7.Location = new System.Drawing.Point(202, 358);
+            this.textBox7.Location = new System.Drawing.Point(203, 325);
             this.textBox7.Name = "textBox7";
             this.textBox7.Size = new System.Drawing.Size(163, 20);
             this.textBox7.TabIndex = 30;
@@ -311,7 +313,7 @@ namespace correcao.solo.Frontend
             // 
             // textBox8
             // 
-            this.textBox8.Location = new System.Drawing.Point(202, 329);
+            this.textBox8.Location = new System.Drawing.Point(203, 296);
             this.textBox8.Name = "textBox8";
             this.textBox8.Size = new System.Drawing.Size(163, 20);
             this.textBox8.TabIndex = 29;
@@ -319,7 +321,7 @@ namespace correcao.solo.Frontend
             // 
             // textBox9
             // 
-            this.textBox9.Location = new System.Drawing.Point(202, 298);
+            this.textBox9.Location = new System.Drawing.Point(203, 265);
             this.textBox9.Name = "textBox9";
             this.textBox9.Size = new System.Drawing.Size(163, 20);
             this.textBox9.TabIndex = 28;
@@ -327,7 +329,7 @@ namespace correcao.solo.Frontend
             // 
             // textBox10
             // 
-            this.textBox10.Location = new System.Drawing.Point(202, 268);
+            this.textBox10.Location = new System.Drawing.Point(203, 235);
             this.textBox10.Name = "textBox10";
             this.textBox10.Size = new System.Drawing.Size(163, 20);
             this.textBox10.TabIndex = 27;
@@ -335,7 +337,7 @@ namespace correcao.solo.Frontend
             // 
             // textBox11
             // 
-            this.textBox11.Location = new System.Drawing.Point(202, 414);
+            this.textBox11.Location = new System.Drawing.Point(203, 381);
             this.textBox11.Name = "textBox11";
             this.textBox11.Size = new System.Drawing.Size(163, 20);
             this.textBox11.TabIndex = 32;
@@ -343,7 +345,7 @@ namespace correcao.solo.Frontend
             // 
             // textBox12
             // 
-            this.textBox12.Location = new System.Drawing.Point(202, 385);
+            this.textBox12.Location = new System.Drawing.Point(203, 352);
             this.textBox12.Name = "textBox12";
             this.textBox12.Size = new System.Drawing.Size(163, 20);
             this.textBox12.TabIndex = 31;
@@ -351,7 +353,7 @@ namespace correcao.solo.Frontend
             // 
             // textBox13
             // 
-            this.textBox13.Location = new System.Drawing.Point(583, 414);
+            this.textBox13.Location = new System.Drawing.Point(584, 381);
             this.textBox13.Name = "textBox13";
             this.textBox13.Size = new System.Drawing.Size(163, 20);
             this.textBox13.TabIndex = 38;
@@ -359,7 +361,7 @@ namespace correcao.solo.Frontend
             // 
             // textBox14
             // 
-            this.textBox14.Location = new System.Drawing.Point(583, 385);
+            this.textBox14.Location = new System.Drawing.Point(584, 352);
             this.textBox14.Name = "textBox14";
             this.textBox14.Size = new System.Drawing.Size(163, 20);
             this.textBox14.TabIndex = 37;
@@ -367,7 +369,7 @@ namespace correcao.solo.Frontend
             // 
             // textBox15
             // 
-            this.textBox15.Location = new System.Drawing.Point(583, 358);
+            this.textBox15.Location = new System.Drawing.Point(584, 325);
             this.textBox15.Name = "textBox15";
             this.textBox15.Size = new System.Drawing.Size(163, 20);
             this.textBox15.TabIndex = 36;
@@ -375,7 +377,7 @@ namespace correcao.solo.Frontend
             // 
             // textBox16
             // 
-            this.textBox16.Location = new System.Drawing.Point(583, 329);
+            this.textBox16.Location = new System.Drawing.Point(584, 296);
             this.textBox16.Name = "textBox16";
             this.textBox16.Size = new System.Drawing.Size(163, 20);
             this.textBox16.TabIndex = 35;
@@ -383,7 +385,7 @@ namespace correcao.solo.Frontend
             // 
             // textBox17
             // 
-            this.textBox17.Location = new System.Drawing.Point(583, 298);
+            this.textBox17.Location = new System.Drawing.Point(584, 265);
             this.textBox17.Name = "textBox17";
             this.textBox17.Size = new System.Drawing.Size(163, 20);
             this.textBox17.TabIndex = 34;
@@ -391,7 +393,7 @@ namespace correcao.solo.Frontend
             // 
             // textBox18
             // 
-            this.textBox18.Location = new System.Drawing.Point(583, 268);
+            this.textBox18.Location = new System.Drawing.Point(584, 235);
             this.textBox18.Name = "textBox18";
             this.textBox18.Size = new System.Drawing.Size(163, 20);
             this.textBox18.TabIndex = 33;
@@ -401,7 +403,7 @@ namespace correcao.solo.Frontend
             // 
             this.label22.AutoSize = true;
             this.label22.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F);
-            this.label22.Location = new System.Drawing.Point(85, 230);
+            this.label22.Location = new System.Drawing.Point(79, 204);
             this.label22.Name = "label22";
             this.label22.Size = new System.Drawing.Size(46, 18);
             this.label22.TabIndex = 39;
@@ -411,7 +413,7 @@ namespace correcao.solo.Frontend
             // 
             this.label23.AutoSize = true;
             this.label23.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F);
-            this.label23.Location = new System.Drawing.Point(474, 230);
+            this.label23.Location = new System.Drawing.Point(462, 204);
             this.label23.Name = "label23";
             this.label23.Size = new System.Drawing.Size(46, 18);
             this.label23.TabIndex = 40;
@@ -421,7 +423,7 @@ namespace correcao.solo.Frontend
             // 
             this.label24.AutoSize = true;
             this.label24.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F);
-            this.label24.Location = new System.Drawing.Point(255, 230);
+            this.label24.Location = new System.Drawing.Point(260, 204);
             this.label24.Name = "label24";
             this.label24.Size = new System.Drawing.Size(92, 18);
             this.label24.TabIndex = 41;
@@ -431,7 +433,7 @@ namespace correcao.solo.Frontend
             // 
             this.label25.AutoSize = true;
             this.label25.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F);
-            this.label25.Location = new System.Drawing.Point(628, 230);
+            this.label25.Location = new System.Drawing.Point(633, 204);
             this.label25.Name = "label25";
             this.label25.Size = new System.Drawing.Size(92, 18);
             this.label25.TabIndex = 42;
@@ -440,7 +442,7 @@ namespace correcao.solo.Frontend
             // label26
             // 
             this.label26.AutoSize = true;
-            this.label26.Location = new System.Drawing.Point(62, 176);
+            this.label26.Location = new System.Drawing.Point(60, 153);
             this.label26.Name = "label26";
             this.label26.Size = new System.Drawing.Size(673, 13);
             this.label26.TabIndex = 43;
@@ -449,7 +451,7 @@ namespace correcao.solo.Frontend
             // 
             // EfFosforo
             // 
-            this.EfFosforo.Location = new System.Drawing.Point(202, 142);
+            this.EfFosforo.Location = new System.Drawing.Point(202, 131);
             this.EfFosforo.Minimum = new decimal(new int[] {
             1,
             0,
@@ -465,11 +467,23 @@ namespace correcao.solo.Frontend
             0});
             this.EfFosforo.ValueChanged += new System.EventHandler(this.EfFosforo_ValueChanged);
             // 
+            // Salvar
+            // 
+            this.Salvar.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.25F);
+            this.Salvar.Location = new System.Drawing.Point(601, 408);
+            this.Salvar.Name = "Salvar";
+            this.Salvar.Size = new System.Drawing.Size(146, 30);
+            this.Salvar.TabIndex = 64;
+            this.Salvar.Text = "Gravar";
+            this.Salvar.UseVisualStyleBackColor = true;
+            this.Salvar.Click += new System.EventHandler(this.Salvar_Click);
+            // 
             // CorrecaoFosforo
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.Salvar);
             this.Controls.Add(this.EfFosforo);
             this.Controls.Add(this.label26);
             this.Controls.Add(this.label25);
@@ -565,5 +579,6 @@ namespace correcao.solo.Frontend
         private System.Windows.Forms.Label label25;
         private System.Windows.Forms.Label label26;
         private System.Windows.Forms.NumericUpDown EfFosforo;
+        private System.Windows.Forms.Button Salvar;
     }
 }

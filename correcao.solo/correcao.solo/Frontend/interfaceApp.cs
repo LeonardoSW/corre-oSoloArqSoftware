@@ -22,6 +22,7 @@ namespace correcao.solo
         
         InformacoesClienteSolo telaClienteSolo = new InformacoesClienteSolo();
         CorrecaoFosforo telaCorrecaoFosforo = new CorrecaoFosforo();
+        CorrecaoPotassio telaCorrecaoPotassio = new CorrecaoPotassio();
         double valorCmol = 0;
 
         private void label1_Click(object sender, EventArgs e)
@@ -124,7 +125,13 @@ namespace correcao.solo
         private void AbrirTelaCorrecaoFosforo_Click(object sender, EventArgs e)
         {
             telaCorrecaoFosforo.ShowDialog();
+            textBox21.Text = telaCorrecaoFosforo.qtdAplicar.ToString();
+        }
 
+        private void AplicarValoresCorrecaoPotassio_Click(object sender, EventArgs e)
+        {
+            telaCorrecaoPotassio.ShowDialog();
+            textBox20.Text = telaCorrecaoPotassio.qtdAplicar.ToString();
         }
     }
 }
