@@ -52,6 +52,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Frontend\CorrecaoCalcioMagnésio.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Frontend\CorrecaoCalcioMagnésio.Designer.cs">
+      <DependentUpon>CorrecaoCalcioMagnésio.cs</DependentUpon>
+    </Compile>
     <Compile Include="Frontend\CorrecaoFosforo.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -80,6 +86,9 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Frontend\CorrecaoCalcioMagnésio.resx">
+      <DependentUpon>CorrecaoCalcioMagnésio.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Frontend\CorrecaoFosforo.resx">
       <DependentUpon>CorrecaoFosforo.cs</DependentUpon>
     </EmbeddedResource>

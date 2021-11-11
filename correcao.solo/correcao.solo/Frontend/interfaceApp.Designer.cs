@@ -102,7 +102,7 @@ namespace correcao.solo
             this.label47 = new System.Windows.Forms.Label();
             this.AbrirTelaCorrecaoFosforo = new System.Windows.Forms.Button();
             this.AplicarValoresCorrecaoPotassio = new System.Windows.Forms.Button();
-            this.button3 = new System.Windows.Forms.Button();
+            this.AplicarValoresCalcioMagnésio = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // label1
@@ -776,22 +776,23 @@ namespace correcao.solo
             this.AplicarValoresCorrecaoPotassio.UseVisualStyleBackColor = true;
             this.AplicarValoresCorrecaoPotassio.Click += new System.EventHandler(this.AplicarValoresCorrecaoPotassio_Click);
             // 
-            // button3
+            // AplicarValoresCalcioMagnésio
             // 
-            this.button3.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button3.Location = new System.Drawing.Point(523, 348);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(177, 66);
-            this.button3.TabIndex = 98;
-            this.button3.Text = "Aplicar Valores \r\nCorreção/Recuperação de Calcio e Magnésio";
-            this.button3.UseVisualStyleBackColor = true;
+            this.AplicarValoresCalcioMagnésio.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.AplicarValoresCalcioMagnésio.Location = new System.Drawing.Point(523, 348);
+            this.AplicarValoresCalcioMagnésio.Name = "AplicarValoresCalcioMagnésio";
+            this.AplicarValoresCalcioMagnésio.Size = new System.Drawing.Size(177, 66);
+            this.AplicarValoresCalcioMagnésio.TabIndex = 98;
+            this.AplicarValoresCalcioMagnésio.Text = "Aplicar Valores \r\nCorreção/Recuperação de Calcio e Magnésio";
+            this.AplicarValoresCalcioMagnésio.UseVisualStyleBackColor = true;
+            this.AplicarValoresCalcioMagnésio.Click += new System.EventHandler(this.AplicarValoresCalcioMagnésio_Click);
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(737, 487);
-            this.Controls.Add(this.button3);
+            this.Controls.Add(this.AplicarValoresCalcioMagnésio);
             this.Controls.Add(this.AplicarValoresCorrecaoPotassio);
             this.Controls.Add(this.AbrirTelaCorrecaoFosforo);
             this.Controls.Add(this.label47);
@@ -948,7 +949,7 @@ namespace correcao.solo
         private System.Windows.Forms.Label label47;
         private System.Windows.Forms.Button AbrirTelaCorrecaoFosforo;
         private System.Windows.Forms.Button AplicarValoresCorrecaoPotassio;
-        private System.Windows.Forms.Button button3;
+        private System.Windows.Forms.Button AplicarValoresCalcioMagnésio;
     }
 }
 

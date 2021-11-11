@@ -19,11 +19,12 @@ namespace correcao.solo
             InitializeComponent();
         }
 
-        
+        double valorCmol = 0;
         InformacoesClienteSolo telaClienteSolo = new InformacoesClienteSolo();
         CorrecaoFosforo telaCorrecaoFosforo = new CorrecaoFosforo();
         CorrecaoPotassio telaCorrecaoPotassio = new CorrecaoPotassio();
-        double valorCmol = 0;
+        CorrecaoCalcioMagnésio telaCorrecaoCalcioMagnesio = new CorrecaoCalcioMagnésio("ValidaçãoGUI","ctcTeste","1");
+        
 
         private void label1_Click(object sender, EventArgs e)
         {
@@ -132,6 +133,12 @@ namespace correcao.solo
         {
             telaCorrecaoPotassio.ShowDialog();
             textBox20.Text = telaCorrecaoPotassio.qtdAplicar.ToString();
+        }
+
+        private void AplicarValoresCalcioMagnésio_Click(object sender, EventArgs e)
+        {
+            telaCorrecaoCalcioMagnesio.ShowDialog();
+            //telaCorrecaoCalcioMagnesio.qtdAplicar.ToString();
         }
     }
 }
