@@ -46,26 +46,26 @@ namespace correcao.solo
             this.label14 = new System.Windows.Forms.Label();
             this.label15 = new System.Windows.Forms.Label();
             this.textBox1 = new System.Windows.Forms.TextBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.textBox3 = new System.Windows.Forms.TextBox();
-            this.textBox4 = new System.Windows.Forms.TextBox();
+            this.cMolPotassio = new System.Windows.Forms.TextBox();
+            this.cMolCalcio = new System.Windows.Forms.TextBox();
+            this.cMolMagnesio = new System.Windows.Forms.TextBox();
             this.textBox6 = new System.Windows.Forms.TextBox();
             this.textBox7 = new System.Windows.Forms.TextBox();
-            this.textBox8 = new System.Windows.Forms.TextBox();
-            this.textBox9 = new System.Windows.Forms.TextBox();
-            this.textBox11 = new System.Windows.Forms.TextBox();
-            this.textBox12 = new System.Windows.Forms.TextBox();
-            this.textBox13 = new System.Windows.Forms.TextBox();
-            this.textBox14 = new System.Windows.Forms.TextBox();
+            this.HmaisAL = new System.Windows.Forms.TextBox();
+            this.Aluminio = new System.Windows.Forms.TextBox();
+            this.magnesioNoSolo = new System.Windows.Forms.TextBox();
+            this.calcioNoSolo = new System.Windows.Forms.TextBox();
+            this.potassioNoSolo = new System.Windows.Forms.TextBox();
+            this.Fosforo = new System.Windows.Forms.TextBox();
             this.textBox15 = new System.Windows.Forms.TextBox();
             this.textBox16 = new System.Windows.Forms.TextBox();
             this.textBox18 = new System.Windows.Forms.TextBox();
             this.textBox19 = new System.Windows.Forms.TextBox();
             this.textBox20 = new System.Windows.Forms.TextBox();
             this.textBox21 = new System.Windows.Forms.TextBox();
-            this.textBox22 = new System.Windows.Forms.TextBox();
-            this.textBox23 = new System.Windows.Forms.TextBox();
-            this.textBox24 = new System.Windows.Forms.TextBox();
+            this.vPercentualAtual = new System.Windows.Forms.TextBox();
+            this.ctcCmol = new System.Windows.Forms.TextBox();
+            this.sCmol = new System.Windows.Forms.TextBox();
             this.label16 = new System.Windows.Forms.Label();
             this.label17 = new System.Windows.Forms.Label();
             this.label18 = new System.Windows.Forms.Label();
@@ -90,7 +90,7 @@ namespace correcao.solo
             this.label37 = new System.Windows.Forms.Label();
             this.label38 = new System.Windows.Forms.Label();
             this.textBox10 = new System.Windows.Forms.TextBox();
-            this.textBox25 = new System.Windows.Forms.TextBox();
+            this.Enxofre = new System.Windows.Forms.TextBox();
             this.textBox27 = new System.Windows.Forms.TextBox();
             this.label39 = new System.Windows.Forms.Label();
             this.label40 = new System.Windows.Forms.Label();
@@ -275,26 +275,27 @@ namespace correcao.solo
             this.textBox1.Size = new System.Drawing.Size(94, 20);
             this.textBox1.TabIndex = 35;
             // 
-            // textBox2
+            // cMolPotassio
             // 
-            this.textBox2.Location = new System.Drawing.Point(214, 206);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(78, 20);
-            this.textBox2.TabIndex = 36;
+            this.cMolPotassio.Location = new System.Drawing.Point(214, 206);
+            this.cMolPotassio.Name = "cMolPotassio";
+            this.cMolPotassio.Size = new System.Drawing.Size(78, 20);
+            this.cMolPotassio.TabIndex = 36;
+            this.cMolPotassio.TextChanged += new System.EventHandler(this.cMolPotassio_TextChanged);
             // 
-            // textBox3
+            // cMolCalcio
             // 
-            this.textBox3.Location = new System.Drawing.Point(298, 206);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(94, 20);
-            this.textBox3.TabIndex = 37;
+            this.cMolCalcio.Location = new System.Drawing.Point(298, 206);
+            this.cMolCalcio.Name = "cMolCalcio";
+            this.cMolCalcio.Size = new System.Drawing.Size(94, 20);
+            this.cMolCalcio.TabIndex = 37;
             // 
-            // textBox4
+            // cMolMagnesio
             // 
-            this.textBox4.Location = new System.Drawing.Point(398, 206);
-            this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(84, 20);
-            this.textBox4.TabIndex = 38;
+            this.cMolMagnesio.Location = new System.Drawing.Point(398, 206);
+            this.cMolMagnesio.Name = "cMolMagnesio";
+            this.cMolMagnesio.Size = new System.Drawing.Size(84, 20);
+            this.cMolMagnesio.TabIndex = 38;
             // 
             // textBox6
             // 
@@ -310,47 +311,51 @@ namespace correcao.solo
             this.textBox7.Size = new System.Drawing.Size(48, 20);
             this.textBox7.TabIndex = 41;
             // 
-            // textBox8
+            // HmaisAL
             // 
-            this.textBox8.Location = new System.Drawing.Point(624, 170);
-            this.textBox8.Name = "textBox8";
-            this.textBox8.Size = new System.Drawing.Size(48, 20);
-            this.textBox8.TabIndex = 48;
+            this.HmaisAL.Location = new System.Drawing.Point(624, 170);
+            this.HmaisAL.Name = "HmaisAL";
+            this.HmaisAL.Size = new System.Drawing.Size(48, 20);
+            this.HmaisAL.TabIndex = 48;
+            this.HmaisAL.TextChanged += new System.EventHandler(this.HmaisAL_TextChanged);
             // 
-            // textBox9
+            // Aluminio
             // 
-            this.textBox9.Location = new System.Drawing.Point(560, 170);
-            this.textBox9.Name = "textBox9";
-            this.textBox9.Size = new System.Drawing.Size(48, 20);
-            this.textBox9.TabIndex = 47;
+            this.Aluminio.Location = new System.Drawing.Point(560, 170);
+            this.Aluminio.Name = "Aluminio";
+            this.Aluminio.Size = new System.Drawing.Size(48, 20);
+            this.Aluminio.TabIndex = 47;
             // 
-            // textBox11
+            // magnesioNoSolo
             // 
-            this.textBox11.Location = new System.Drawing.Point(398, 171);
-            this.textBox11.Name = "textBox11";
-            this.textBox11.Size = new System.Drawing.Size(84, 20);
-            this.textBox11.TabIndex = 45;
+            this.magnesioNoSolo.Location = new System.Drawing.Point(398, 171);
+            this.magnesioNoSolo.Name = "magnesioNoSolo";
+            this.magnesioNoSolo.Size = new System.Drawing.Size(84, 20);
+            this.magnesioNoSolo.TabIndex = 45;
+            this.magnesioNoSolo.TextChanged += new System.EventHandler(this.magnesioNoSolo_TextChanged);
             // 
-            // textBox12
+            // calcioNoSolo
             // 
-            this.textBox12.Location = new System.Drawing.Point(298, 171);
-            this.textBox12.Name = "textBox12";
-            this.textBox12.Size = new System.Drawing.Size(94, 20);
-            this.textBox12.TabIndex = 44;
+            this.calcioNoSolo.Location = new System.Drawing.Point(298, 171);
+            this.calcioNoSolo.Name = "calcioNoSolo";
+            this.calcioNoSolo.Size = new System.Drawing.Size(94, 20);
+            this.calcioNoSolo.TabIndex = 44;
+            this.calcioNoSolo.TextChanged += new System.EventHandler(this.calcioNoSolo_TextChanged);
             // 
-            // textBox13
+            // potassioNoSolo
             // 
-            this.textBox13.Location = new System.Drawing.Point(214, 171);
-            this.textBox13.Name = "textBox13";
-            this.textBox13.Size = new System.Drawing.Size(78, 20);
-            this.textBox13.TabIndex = 43;
+            this.potassioNoSolo.Location = new System.Drawing.Point(214, 171);
+            this.potassioNoSolo.Name = "potassioNoSolo";
+            this.potassioNoSolo.Size = new System.Drawing.Size(78, 20);
+            this.potassioNoSolo.TabIndex = 43;
+            this.potassioNoSolo.TextChanged += new System.EventHandler(this.potassioNoSolo_TextChanged);
             // 
-            // textBox14
+            // Fosforo
             // 
-            this.textBox14.Location = new System.Drawing.Point(98, 171);
-            this.textBox14.Name = "textBox14";
-            this.textBox14.Size = new System.Drawing.Size(94, 20);
-            this.textBox14.TabIndex = 42;
+            this.Fosforo.Location = new System.Drawing.Point(98, 171);
+            this.Fosforo.Name = "Fosforo";
+            this.Fosforo.Size = new System.Drawing.Size(94, 20);
+            this.Fosforo.TabIndex = 42;
             // 
             // textBox15
             // 
@@ -394,26 +399,27 @@ namespace correcao.solo
             this.textBox21.Size = new System.Drawing.Size(94, 20);
             this.textBox21.TabIndex = 49;
             // 
-            // textBox22
+            // vPercentualAtual
             // 
-            this.textBox22.Location = new System.Drawing.Point(560, 301);
-            this.textBox22.Name = "textBox22";
-            this.textBox22.Size = new System.Drawing.Size(94, 20);
-            this.textBox22.TabIndex = 58;
+            this.vPercentualAtual.Location = new System.Drawing.Point(560, 301);
+            this.vPercentualAtual.Name = "vPercentualAtual";
+            this.vPercentualAtual.Size = new System.Drawing.Size(94, 20);
+            this.vPercentualAtual.TabIndex = 58;
+            this.vPercentualAtual.TextChanged += new System.EventHandler(this.textBox22_TextChanged);
             // 
-            // textBox23
+            // ctcCmol
             // 
-            this.textBox23.Location = new System.Drawing.Point(377, 301);
-            this.textBox23.Name = "textBox23";
-            this.textBox23.Size = new System.Drawing.Size(94, 20);
-            this.textBox23.TabIndex = 57;
+            this.ctcCmol.Location = new System.Drawing.Point(377, 301);
+            this.ctcCmol.Name = "ctcCmol";
+            this.ctcCmol.Size = new System.Drawing.Size(94, 20);
+            this.ctcCmol.TabIndex = 57;
             // 
-            // textBox24
+            // sCmol
             // 
-            this.textBox24.Location = new System.Drawing.Point(198, 301);
-            this.textBox24.Name = "textBox24";
-            this.textBox24.Size = new System.Drawing.Size(94, 20);
-            this.textBox24.TabIndex = 56;
+            this.sCmol.Location = new System.Drawing.Point(198, 301);
+            this.sCmol.Name = "sCmol";
+            this.sCmol.Size = new System.Drawing.Size(94, 20);
+            this.sCmol.TabIndex = 56;
             // 
             // label16
             // 
@@ -652,12 +658,12 @@ namespace correcao.solo
             this.textBox10.Size = new System.Drawing.Size(48, 20);
             this.textBox10.TabIndex = 86;
             // 
-            // textBox25
+            // Enxofre
             // 
-            this.textBox25.Location = new System.Drawing.Point(499, 170);
-            this.textBox25.Name = "textBox25";
-            this.textBox25.Size = new System.Drawing.Size(48, 20);
-            this.textBox25.TabIndex = 84;
+            this.Enxofre.Location = new System.Drawing.Point(499, 170);
+            this.Enxofre.Name = "Enxofre";
+            this.Enxofre.Size = new System.Drawing.Size(48, 20);
+            this.Enxofre.TabIndex = 84;
             // 
             // textBox27
             // 
@@ -804,7 +810,7 @@ namespace correcao.solo
             this.Controls.Add(this.label40);
             this.Controls.Add(this.label39);
             this.Controls.Add(this.textBox10);
-            this.Controls.Add(this.textBox25);
+            this.Controls.Add(this.Enxofre);
             this.Controls.Add(this.textBox27);
             this.Controls.Add(this.label38);
             this.Controls.Add(this.label37);
@@ -829,26 +835,26 @@ namespace correcao.solo
             this.Controls.Add(this.label17);
             this.Controls.Add(this.label18);
             this.Controls.Add(this.label19);
-            this.Controls.Add(this.textBox22);
-            this.Controls.Add(this.textBox23);
-            this.Controls.Add(this.textBox24);
+            this.Controls.Add(this.vPercentualAtual);
+            this.Controls.Add(this.ctcCmol);
+            this.Controls.Add(this.sCmol);
             this.Controls.Add(this.textBox15);
             this.Controls.Add(this.textBox16);
             this.Controls.Add(this.textBox18);
             this.Controls.Add(this.textBox19);
             this.Controls.Add(this.textBox20);
             this.Controls.Add(this.textBox21);
-            this.Controls.Add(this.textBox8);
-            this.Controls.Add(this.textBox9);
-            this.Controls.Add(this.textBox11);
-            this.Controls.Add(this.textBox12);
-            this.Controls.Add(this.textBox13);
-            this.Controls.Add(this.textBox14);
+            this.Controls.Add(this.HmaisAL);
+            this.Controls.Add(this.Aluminio);
+            this.Controls.Add(this.magnesioNoSolo);
+            this.Controls.Add(this.calcioNoSolo);
+            this.Controls.Add(this.potassioNoSolo);
+            this.Controls.Add(this.Fosforo);
             this.Controls.Add(this.textBox7);
             this.Controls.Add(this.textBox6);
-            this.Controls.Add(this.textBox4);
-            this.Controls.Add(this.textBox3);
-            this.Controls.Add(this.textBox2);
+            this.Controls.Add(this.cMolMagnesio);
+            this.Controls.Add(this.cMolCalcio);
+            this.Controls.Add(this.cMolPotassio);
             this.Controls.Add(this.textBox1);
             this.Controls.Add(this.label15);
             this.Controls.Add(this.label14);
@@ -893,26 +899,26 @@ namespace correcao.solo
         private System.Windows.Forms.Label label14;
         private System.Windows.Forms.Label label15;
         private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.TextBox textBox2;
-        private System.Windows.Forms.TextBox textBox3;
-        private System.Windows.Forms.TextBox textBox4;
+        private System.Windows.Forms.TextBox cMolPotassio;
+        private System.Windows.Forms.TextBox cMolCalcio;
+        private System.Windows.Forms.TextBox cMolMagnesio;
         private System.Windows.Forms.TextBox textBox6;
         private System.Windows.Forms.TextBox textBox7;
-        private System.Windows.Forms.TextBox textBox8;
-        private System.Windows.Forms.TextBox textBox9;
-        private System.Windows.Forms.TextBox textBox11;
-        private System.Windows.Forms.TextBox textBox12;
-        private System.Windows.Forms.TextBox textBox13;
-        private System.Windows.Forms.TextBox textBox14;
+        private System.Windows.Forms.TextBox HmaisAL;
+        private System.Windows.Forms.TextBox Aluminio;
+        private System.Windows.Forms.TextBox magnesioNoSolo;
+        private System.Windows.Forms.TextBox calcioNoSolo;
+        private System.Windows.Forms.TextBox potassioNoSolo;
+        private System.Windows.Forms.TextBox Fosforo;
         private System.Windows.Forms.TextBox textBox15;
         private System.Windows.Forms.TextBox textBox16;
         private System.Windows.Forms.TextBox textBox18;
         private System.Windows.Forms.TextBox textBox19;
         private System.Windows.Forms.TextBox textBox20;
         private System.Windows.Forms.TextBox textBox21;
-        private System.Windows.Forms.TextBox textBox22;
-        private System.Windows.Forms.TextBox textBox23;
-        private System.Windows.Forms.TextBox textBox24;
+        private System.Windows.Forms.TextBox vPercentualAtual;
+        private System.Windows.Forms.TextBox ctcCmol;
+        private System.Windows.Forms.TextBox sCmol;
         private System.Windows.Forms.Label label16;
         private System.Windows.Forms.Label label17;
         private System.Windows.Forms.Label label18;
@@ -937,7 +943,7 @@ namespace correcao.solo
         private System.Windows.Forms.Label label37;
         private System.Windows.Forms.Label label38;
         private System.Windows.Forms.TextBox textBox10;
-        private System.Windows.Forms.TextBox textBox25;
+        private System.Windows.Forms.TextBox Enxofre;
         private System.Windows.Forms.TextBox textBox27;
         private System.Windows.Forms.Label label39;
         private System.Windows.Forms.Label label40;
